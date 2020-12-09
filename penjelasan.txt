@@ -1,0 +1,46 @@
+Selamat siang Mas. Berikut merupakan hasil pengerjaan test selama lima hari
+
+1. Login (Method Post)
+   -> url di postman : http://localhost/restCI-master/Auth/login
+   -> Masuk ke menu Authorization, pilih basic auth, masukan username : admin dan password : 1234
+   -> Masuk ke menu header, masukan key : X-API-KEYS dan value : doogether
+   -> Masuk ke menu body. Apabila body kosong akan muncul pesan "Provide Email and Password".
+      Apabila body diisi dengan benar sesuai email dan passwordnya, maka akan muncul pesan "User Login Succesful"
+
+2. Register (Method Post)
+   -> url di postman : http://localhost/restCI-master/Auth/register
+   -> Masuk ke menu Authorization, pilih basic auth, masukan username : admin dan password : 1234
+   -> Masuk ke menu header, masukan key : X-API-KEYS dan value : doogether
+   -> Masuk ke menu body. Apabila body kosong akan muncul pesan "Field tidak boleh kosong".
+   Apabila body diisi dengan benar yaitu nama,email dan password, maka akan muncul pesan "Data User Berhasil Ditambahkan"
+
+3. List (Method Get)
+   -> url di postman : http://localhost/restCI-master/Session/list
+   -> Masuk ke menu Authorization, pilih basic auth, masukan username : admin dan password : 1234
+   -> Masuk ke menu header, masukan key : X-API-KEYS dan value : doogether
+   -> Masuk ke menu body, pilih option none. Maka akan menampilkan name dan description dari session
+
+4. Detail (Method Get)
+   -> url di postman : http://localhost/restCI-master/Session/
+   -> Masuk ke menu Authorization, pilih basic auth, masukan username : admin dan password : 1234
+   -> Masuk ke menu header, masukan key : X-API-KEYS dan value : doogether
+   -> Masuk ke menu body, pilih option none. Maka akan menampilkan keseluruhan data dari session
+
+5. Create (Method Post)
+   -> url di postman : http://localhost/restCI-master/Session/add
+   -> Disini saya masih belum berhasil menambah data dan menerapkan session untuk proses create 
+
+6. Update (Method Put)
+   -> url di postman : http://localhost/restCI-master/Session/update
+   -> Masuk ke menu Authorization, pilih basic auth, masukan username : admin dan password : 1234
+   -> Masuk ke menu header, masukan key : X-API-KEYS dan value : doogether
+   -> Masuk ke menu body. Apabila body kosong akan muncul pesan "Field tidak boleh kosong".
+   Apabila body diisi dengan benar yaitu id yang ingin diubah,name,description,start dan duration, maka akan muncul pesan "Data Session Berhasil Diubah"
+
+7. Delete (Method Delete)
+  -> url di postman : http://localhost/restCI-master/Session/delete
+  -> Masuk ke menu Authorization, pilih basic auth, masukan username : admin dan password : 1234
+  -> Masuk ke menu header, masukan key : X-API-KEYS dan value : doogether
+  -> Masuk ke menu body. Apabila body kosong akan muncul pesan "Field tidak boleh kosong".
+  Apabila body diisi dengan benar yaitu id yang ingin dihapus, maka akan muncul pesan "Data Session Berhasil Dihapus"
+
